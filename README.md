@@ -1,28 +1,37 @@
-## Project setup
+## 1.Init
 ```
 npm install
 ```
 
-## global install prisma
+## 2.Globally install prisma
 ```
 yarn global add prisma
 ```
-## 部署 prisma
+
+## 3.Start Database-to-GraphQL Server Docker
+```
+cd server
+docker-compose up -d 
+```
+
+## 4.部署 prisma
 ```
 prisma deploy
 ```
-## 產生 prisma-client
+
+## 5.產生 prisma-client
 ```
 prisma generate
 ```
 
-## Project start
+## 6.start graphQL Server
 ```
+cd..
 npm start
 ```
-## Run Docker
+
+## 7. Browse in localhost:4000
 ```
-cd server
-docker-compose up -d 
+http://localhost:4000/
 ```
 
